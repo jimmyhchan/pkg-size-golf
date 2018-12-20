@@ -1,0 +1,11 @@
+## how small can an npm package be?
+
+### Rules
+
+* `npm publish --dry-run` should succeed
+* `npm pack && gzip -l  pkg-size-golf-0.0.0.tgz` will show the compressed size
+* some discount/leeway for the fact that the smallest name that exist will be taken
+* no requirements for npm/node version as long as it is publishable
+
+
+
